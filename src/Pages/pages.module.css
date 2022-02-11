@@ -1,0 +1,35 @@
+h1,h2,h3{
+  margin: 0;
+  padding: 0;
+}
+
+.img{
+  height: 200px;
+  margin-right: 20px;
+  
+}
+.cardContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.btn{
+  margin: 30px 0;
+}
+.link, .goBackBtn{
+  padding: 10px 15px;
+  margin-left: 10px;
+  text-decoration: none;
+  background-color: lightblue;
+  border-radius: 5px;
+}
+.goBackBtn{
+  padding: 7px 10px;
+  background-color: lightcoral;
+}
+.container{
+  margin: 20px;
+}
+.linkContainer{
+  margin-bottom: 15px;
+}

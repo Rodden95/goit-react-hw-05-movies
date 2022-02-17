@@ -22,15 +22,20 @@ export default function FilmCard() {
     )
    
   }, [id])
+
+  const back = () => {
+    window.history.go(-1);
+  }
   return (
 
     <div >
       <div className={style.btn}>
-        <Link
+        {/* <Link
           to="/"
           className={style.goBackBtn}>
           back
-        </Link>
+        </Link> */}
+        <button className={style.backBtn} onClick={back}>back</button>
       </div>
       {movieData &&
         <Suspense fallback={<div>Загружаем...</div>}><FilmCardComponent data={movieData} /></Suspense>
@@ -42,9 +47,9 @@ export default function FilmCard() {
       </ul>
       <Suspense fallback={<div>Загружаем...</div>}>
         <Routes>
-        <Route path="cast" element={<Cast />} />
-        <Route path="reviews" element={<Reviews />} />
-      </Routes>
+          <Route path="cast" element={<Cast />} />
+          <Route path="reviews" element={<Reviews />} />
+        </Routes>
       </Suspense>
       <Outlet />
     </div>

@@ -33,3 +33,10 @@ h1,h2,h3{
 .linkContainer{
   margin-bottom: 15px;
 }
+
+.backBtn {
+  border: none;
+  background-color: rgb(100, 149, 255);
+  padding: 5px 13px;
+  border-radius: 5px;
+}
